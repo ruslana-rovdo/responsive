@@ -43,6 +43,7 @@ I honestly admit that adaptive websites are a sore subject for me, and I don't r
 - In the description, I mainly mentioned font size, but in fact, this formula applies to anything that will change sizes. For example, the width and height of a button or block of some kind. There is no difference, it's just that I mostly use it for font size and padding.
 - Also, in this formula, other units of measurement are allowed instead of px. You can use em, rem,% whatever you like. There are no restrictions here.
 - The last thing to remember is that this formula does not work for magnification. Those. from small to large it will not do. Those. Let's say the font size on a desktop is 16px, but on a mobile device 30px the formula will not work unfortunately. Such cases are rare, but they exist. In the future I will release an update and add another such formula just in case.
+- An important point if you want to use this formula for many css properties at once, look in the `responsive.css` file there I prepared different variants of variables for the main properties.
 
 ***
 #### With the support of:
