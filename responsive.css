@@ -206,3 +206,16 @@
   --responsive-margin-left: (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--desktop-margin-left-1) - var(--mobile-margin-left-1))) + var(--mobile-margin-left-2);
   margin-left: clamp(var(--mobile-margin-left-2), var(--responsive-margin-left), var(--desktop-margin-left-2));
 }
+
+.box {
+  /* Responsive font-size to increase  */
+  --desktop-layout: 1950;
+  --responsive-layout-1: 320px;
+  --responsive-layout-2: 320;
+  --desktop-size-1: 30;
+  --desktop-size-2: 30px;
+  --mobile-size-1: 80;
+  --mobile-size-2: 80px;
+  --responsive-size: var(--mobile-size-2) - (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--mobile-size-1) - var(--desktop-size-1)));
+  font-size: clamp(var(--desktop-size-2), var(--responsive-size), var(--mobile-size-2));
+}
