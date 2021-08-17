@@ -1,4 +1,6 @@
 # Responsive.css 📐
+![Lines of code](https://img.shields.io/tokei/lines/github/sineylo/Responsive.css?style=for-the-badge) ![Code size](https://img.shields.io/github/languages/code-size/SineYlo/Responsive.css?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/SineYlo/Responsive.css?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/SineYlo/Responsive.css?style=for-the-badge)  
+
 Formula to help you make cool responsive websites
 
 ### 📜 A little about how this formula was developed and what it is for:
