@@ -22,6 +22,17 @@ I honestly admit that adaptive websites are a sore subject for me, and I don't r
 7. `mobile-size-2` - in this variable we also indicate the value of the font or block on the mobile version, but with the units of measurement (example: 15px)
 
 ***
+### ⚙️ How does the enlargement formula work and what does it consist of:
+
+```
+var(--mobile-size-2) - (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--mobile-size-1) - var(--desktop-size-1)))
+```
+
+This formula was added in the new `2.0` update. You don't need to change any variables, just replace the formula.  
+
+If with that formula, when the screen narrowed, the font decreased (i.e., from 80 on the desktop it became 30 on the mobile), now the font, on the contrary, increases (i.e., from 30 on the desktop to 80 on the mobile)
+
+***
 ### 🛠 General record to be used in development:
 
 ```
@@ -46,6 +57,11 @@ I honestly admit that adaptive websites are a sore subject for me, and I don't r
 - Also, in this formula, other units of measurement are allowed instead of px. You can use em, rem,% whatever you like. There are no restrictions here.
 - The last thing to remember is that this formula does not work for magnification. Those. from small to large it will not do. Those. Let's say the font size on a desktop is 16px, but on a mobile device 30px the formula will not work unfortunately. Such cases are rare, but they exist. In the future I will release an update and add another such formula just in case.
 - An important point if you want to use this formula for many css properties at once, look in the `responsive.css` file there I prepared different variants of variables for the main properties.
+
+***
+### 📌 Changelog:
+
+- v2.0 added formula for increasing sizes (date added - `2021-08-17`)
 
 ***
 #### With the support of:
