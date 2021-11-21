@@ -79,7 +79,8 @@ If with that formula, when the screen narrowed, the font decreased (i.e., from 8
 ***
 ### 📌 Changelog:
 
-- v2.0 added formula for increasing sizes (date added - `2021-08-17`)
+- v2.0 | 2021-08-17 | added formula for increasing sizes
+- v2.1 | 2021-11-21 | added `.scss` file with different mixins (I tried to write all possible properties for which the formula can be applied)
 
 ***
 #### With the support of:
