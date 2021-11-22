@@ -1,0 +1,27 @@
+{
+  "name": "responsive.css",
+  "version": "1.0.0",
+  "description": "Formula by which you can create awesome responsive websites with a minimum of media queries.",
+  "main": "responsive.scss",
+  "style": "responsive.scss",
+  "files": [
+    "responsive.css",
+    "responsive.scss",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SineYlo/Responsive.css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "formula",
+    "responsive",
+    "media-queries"
+  ],
+  "author": "SineYlo",
+  "license": "MIT",
+  "bugs": "https://github.com/SineYlo/Responsive.css/issues",
+  "homepage": "https://github.com/SineYlo/Responsive.css#readme"
+}
