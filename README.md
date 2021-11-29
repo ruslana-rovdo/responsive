@@ -1,13 +1,12 @@
 # Responsive.css 📐
 ![Lines of code](https://img.shields.io/tokei/lines/github/sineylo/Responsive.css?style=for-the-badge) ![Code size](https://img.shields.io/github/languages/code-size/SineYlo/Responsive.css?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/SineYlo/Responsive.css?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/SineYlo/Responsive.css?style=for-the-badge)  
 
-Formula to help you make cool responsive websites
+> Formula to help you make cool responsive websites
 
-### 📜 A little about how this formula was developed and what it is for:
+## 📜 A little about how this formula was developed and what it is for:
 I honestly admit that adaptive websites are a sore subject for me, and I don't really like doing it. Because it is long and difficult. Therefore, I am constantly on the lookout for something that would simplify this task. You can say there is Bootstrap and you are right. But it's worth remembering how many layouts are used in it. If I’m not mistaken, it’s about five, and the last one already stretches across the entire width. Now let's remember the reality where we are given only 3 different layout options at best, and at worst only two. Therefore, we have to somehow get out and come up with something. This formula, which I developed, is that when the screen shrinks, the blocks will be at the end of the dimensions that you specify in the formula. Yes, this does not solve the issue of using media queries, but I did not say that this is a solution for all occasions. This is just a help in implementing responsive design, nothing more.
 
-*** 
-### ⚙️ How the reduction formula works and what it consists of:
+## ⚙️ How the reduction formula works and what it consists of:
 
 ```
 (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--desktop-size-1) - var(--mobile-size-1))) + var(--mobile-size-2)
@@ -21,8 +20,7 @@ I honestly admit that adaptive websites are a sore subject for me, and I don't r
 6. `mobile-size-1` - in this variable we indicate the size of the font or block on the mobile version (example: 15) (IMPORTANT! Here we indicate the value without units of measurement).
 7. `mobile-size-2` - in this variable we also indicate the value of the font or block on the mobile version, but with the units of measurement (example: 15px).
 
-***
-### 🛠 Writing a formula for reduction:
+## 🛠 Writing a formula for reduction:
 
 ```
 .box {
@@ -38,8 +36,7 @@ I honestly admit that adaptive websites are a sore subject for me, and I don't r
   font-size: clamp(var(--mobile-size-2), var(--responsive-size), var(--desktop-size-2));
 }
 ```
-***
-### ⚙️ How does the enlargement formula work and what does it consist of:
+## ⚙️ How does the enlargement formula work and what does it consist of:
 
 ```
 var(--mobile-size-2) - (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--mobile-size-1) - var(--desktop-size-1)))
@@ -51,8 +48,7 @@ Well, in font-size, swap `--desktop-size` and `--mobile-size` in the clamp funct
 
 If with that formula, when the screen narrowed, the font decreased (i.e., from 80 on the desktop it became 30 on the mobile), now the font, on the contrary, increases (i.e., from 30 on the desktop to 80 on the mobile).
 
-***
-### 🛠 Writing a formula for increasing:
+## 🛠 Writing a formula for increasing:
 
 ```
 .box {
@@ -68,16 +64,15 @@ If with that formula, when the screen narrowed, the font decreased (i.e., from 8
   font-size: clamp(var(--desktop-size-2), var(--responsive-size), var(--mobile-size-2));
 }
 ```
-***
-### ❗️ ATTENTION:
+## ❗️ ATTENTION:
 
 - This formula works, as in the desktop-first approach, and in the mobile-first approach, the formula does not change from this. The only thing you need is not only one layout option, but at least two (initial and final). Because in the formula you write two values, which is logical from and to.
 - In the description, I mainly mentioned font size, but in fact, this formula applies to anything that will change sizes. For example, the width and height of a button or block of some kind. There is no difference, it's just that I mostly use it for font size and padding.
-- Also, in this formula, other units of measurement are allowed instead of px. You can use em, rem,% whatever you like. There are no restrictions here.
+- Also, in this formula, other units of measurement are allowed instead of px. You can use `em`, `rem` whatever you like. There are no restrictions here.
 - An important point if you want to use this formula for many css properties at once, look in the `responsive.css` file there I prepared different variants of variables for the main properties.
+- For those who already use the `SCSS` preprocessor there is a ready-made file with mixins. All you need to do is simply connect and use.
 
-***
-#### With the support of:
+## 💎 With the support of:
 
 <a href="https://www.browserstack.com">
   <img src="temp/Browserstack-logo.svg?sanitize=false" alt="browserstack" width="160">
