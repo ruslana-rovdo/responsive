@@ -80,4 +80,5 @@ If with that formula, when the screen narrowed, the font decreased (i.e., from 8
 
 ***
 
-If you have any questions or suggestions, you can write to the `issues` section or email me - `contact@sineylo-dev.ru`
+If you have any questions or suggestions, you can write to the `issues` section or email me - `contact@sineylo-dev.ru`  
+> Semantic versioning is used on this repository - [semver.org](https://semver.org)
