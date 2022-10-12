@@ -24,7 +24,7 @@ I honestly admit that doing adaptive is a sore topic for me, and I don't really 
 
 In total, 2 types of formulas were created. To increase and decrease. Actually, no more is needed. Initially, there was only one view, it was for a decrease, but I realized after some time that this was not enough and after a little brainstorming I created 2 views, for an increase. The formula for decreasing works so that when you compress the site, the size of the element will decrease, and for increasing it will increase. In general, it all sounds logical, but it had to be said, otherwise people are different, they may not understand it that way. The formula works with both the `Desktop First` and `Mobile First` approach. The only thing is if you use it with `Mobile First`, you will have to rebuild your thinking a little, because initially it still went with the expectation of `Desktop First`.
 
-## 📉 Formula for reduction
+## 📉 Formula for decrease
 ```
 (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--desktop-size-1) - var(--mobile-size-1))) + var(--mobile-size-2)
 ```
@@ -51,7 +51,7 @@ In total, 2 types of formulas were created. To increase and decrease. Actually, 
   font-size: clamp(var(--mobile-size-2), var(--responsive-size), var(--desktop-size-2));
 }
 ```
-## 📈 Formula for increasing
+## 📈 Formula for increase
 ```
 var(--mobile-size-2) - (100vw - var(--responsive-layout-1)) / ((var(--desktop-layout) - var(--responsive-layout-2)) / (var(--mobile-size-1) - var(--desktop-size-1)))
 ```
@@ -83,13 +83,13 @@ var(--mobile-size-2) - (100vw - var(--responsive-layout-1)) / ((var(--desktop-la
 - The example uses the `font-size` property, but this does not mean that this formula is suitable only for this property. It is generally suitable for almost any property that has dimensions.
 - In this formula, other units of measurement are allowed instead of pixels. You can conditionally use `rem` if you want to. There are no restrictions here.
 - In the `responsive.css` file, I have prepared examples of using this formula, and so in general it is not needed for work.
-- Ready-made mixins are written in the `responsive.scss` file. You can connect this file to your project and use it. This is convenient because you don't have to write all this manually.
+- The `responsive.scss` file contains two functions (for decreasing and increasing) that you can apply to any properties that support dimensions. Ideally, use this formula through functions, because if you write, as in the CSS example, then the file will be bloated and it will also weigh a lot, which is not very good. Also, if desired, you can use the fifth parameter `unit`, thereby replacing the unit `vw` with `vh`.
 
 ## 🔱 Created with the support of
 
 <a href="https://www.browserstack.com">
-  <img src="temp/Browserstack-logo.svg?sanitize=false" width="200" alt="browserstack">
-</a> 
+  <img src="temp/logo-browserstack.svg?sanitize=false" width="200" alt="browserstack">
+</a>
 
 ## 📃 What is used in this repository
 - Semantic versioning - [semver.org](https://semver.org)
