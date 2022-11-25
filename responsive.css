@@ -1,5 +1,4 @@
 .box {
-  /* Responsive font-size */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -12,7 +11,6 @@
 }
 
 .box {
-  /* Responsive line-height */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -25,7 +23,6 @@
 }
 
 .box {
-  /* Responsive min-height */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -38,7 +35,6 @@
 }
 
 .box {
-  /* Responsive height */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -51,7 +47,6 @@
 }
 
 .box {
-  /* Responsive max-height */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -65,7 +60,6 @@
 
 
 .box {
-  /* Responsive min-width */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -78,7 +72,6 @@
 }
 
 .box {
-  /* Responsive width */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -91,7 +84,6 @@
 }
 
 .box {
-  /* Responsive max-width */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -104,7 +96,6 @@
 }
 
 .box {
-  /* Responsive padding-top */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -117,7 +108,6 @@
 }
 
 .box {
-  /* Responsive padding-right */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -130,7 +120,6 @@
 }
 
 .box {
-  /* Responsive padding-bottom */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -143,7 +132,6 @@
 }
 
 .box {
-  /* Responsive padding-left */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -156,7 +144,6 @@
 }
 
 .box {
-  /* Responsive margin-top */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -169,7 +156,6 @@
 }
 
 .box {
-  /* Responsive margin-right */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -182,7 +168,6 @@
 }
 
 .box {
-  /* Responsive margin-bottom */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -195,7 +180,6 @@
 }
 
 .box {
-  /* Responsive margin-left */
   --desktop-layout: 1600;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;
@@ -208,7 +192,6 @@
 }
 
 .box {
-  /* Responsive font-size to increase  */
   --desktop-layout: 1950;
   --responsive-layout-1: 320px;
   --responsive-layout-2: 320;

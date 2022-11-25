@@ -1,8 +1,8 @@
-// => LOADING THE BUILT-IN MODULES
+// [GROUP] LOADING THE BUILT-IN MODULES
 // ===================================================================================================>
 @use "sass:math";
 
-// => ROUNDING DECIMAL NUMBERS
+// [GROUP] ROUNDING DECIMAL NUMBERS
 // ===================================================================================================>
 @function custom-round($number, $precision: 2) {
   $x: 1;
@@ -16,18 +16,18 @@
   @return math.div(math.round($number * $x), $x);
 }
 
-// => DECREASE
+// [GROUP] DECREASE
 // ===================================================================================================>
-// [CM] Example | font-size: responsive-decrease(80px, 15px, 1600px, 768px);
+// [INFORMATION] => [Example | font-size: responsive-decrease(80px, 15px, 1600px, 768px)]
 @function responsive-decrease($initial-size, $final-size, $initial-breakpoint, $final-breakpoint, $unit: vw) {
   $responsive-size: calc((100#{$unit} - #{$final-breakpoint}) / custom-round(calc(($initial-breakpoint - $final-breakpoint) / ($initial-size - $final-size))) + $final-size);
 
   @return clamp(#{$final-size}, #{$responsive-size}, #{$initial-size});
 }
 
-// => INCREASE
+// [GROUP] INCREASE
 // ===================================================================================================>
-// [CM] Example | font-size: responsive-increase(15px, 80px, 1600px, 768px);
+// [INFORMATION] => [Example | font-size: responsive-increase(15px, 80px, 1600px, 768px)]
 @function responsive-increase($initial-size, $final-size, $initial-breakpoint, $final-breakpoint, $unit: vw) {
   $responsive-size: calc($final-size - (100#{$unit} - #{$final-breakpoint}) / custom-round(calc(($initial-breakpoint - $final-breakpoint) / ($final-size - $initial-size))));
 
